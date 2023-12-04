@@ -5,7 +5,7 @@ async function getApi(title) {
   try {
     const response = await fetch(apiUrl);
 
-    if (response.status = 404) {
+    if (response.status == 404) {
         console.error('Nombre de pelicula no encontrado');
     }
 
