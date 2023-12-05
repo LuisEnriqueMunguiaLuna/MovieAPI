@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto Final Topicos</title>
 </head>
 <body>
-    <form id="movieForm">
-        <label for="movieInput">Ingrese el título de la película:</label>
-        <input type="text" id="movieInput" required>
-        <button type="submit">Buscar</button>
-      </form>
+    <div>
+        <form>
+            <label>Ingrese el título de la película:</label>
+            <input type="text" id="movie-input">
+            <button type="button" id="search">Buscar</button>
+        </form>
+        <button id="sort">Filtrar</button>
+    </div>
+
+    <div id="movie-container"></div>
+
+    <div id="sortMovies-container"></div>
     
-    <select id="select">
-        <option value="peliculas">Peliculas</option>
-        <option value="Terror">Terror</option>
-        <option value="Comedia">Comedia</option>
-        <option value="Accion">Accion</option>
-        <p></p>
-    </select>
+    <div>
+        <select id="select">
+            <option value="peliculas">Peliculas</option>
+            <option value="Terror">Terror</option>
+            <option value="Comedia">Comedia</option>
+            <option value="Accion">Accion</option>
+        </select>
+    </div>
+
+    <div id=""></div>
 
     
 
