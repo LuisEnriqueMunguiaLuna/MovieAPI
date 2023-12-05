@@ -1,5 +1,10 @@
 const apiKey = 'b61248c1'; 
 
+document.getElementById("movieForm").addEventListener("click", () => {
+  getApi();
+
+});
+
 async function getApi(title) {
   const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(title)}`;
   try {
@@ -16,7 +21,7 @@ async function getApi(title) {
   }
 }
 
-const movies = ["Batman", "The Matrix", "Ted"];
+const movies = ["Batman", "The Matrix", "Ted", "Cars 2", "La Monja 2", "Anabel", "John Wick 4", "The flash", "Avatar 2", "Sonic 2", "Hulk", "Transformers", "Scary Movie", "Terrifier"];
 
 movies.forEach(movie => {
     getApi(movie);
